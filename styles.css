@@ -43,15 +43,15 @@ html, body, .main-container {
     background-image: url('./assets/bg-img.jpg');
     background-size: cover;
     height: var(--view-height);
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: center;
     overflow: hidden;
 }
 
 .logo > img {
-    height: 15vh;
-    min-height: 5vw;
+    width: 15vh;
+    min-width: 4vw;
     opacity: 0.8;
     margin: 10px auto;
     margin-right: 5px;
@@ -84,8 +84,9 @@ html, body, .main-container {
 .side-image > span {
     font-style: oblique;
     color: var(--red);
+    flex-shrink: calc(0.1 * var(--view-height));
     font-family: var(--fonts);
-    position: fixed;
+    position: absolute;
     opacity: 0.6;
     bottom: 1px;
 }
