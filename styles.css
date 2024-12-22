@@ -1,6 +1,9 @@
 @font-face {
-    font-family: 'odin';
-    src: url('./assets/Norse-Bold.otf');
+    font-family: 'quintessential';
+    src: url('./assets/quintessential-regular-webfont.woff2') format('woff2'),
+         url('./assets/quintessential-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
@@ -25,20 +28,24 @@ html, body, .main-container {
     display: flex;
     padding: 0;
     margin: 0;
+    overflow: auto;
 }
 
 .side-image {
-    background-image: url('./assets/halie-west-25xggax4bSA-unsplash.jpg');
+    position: sticky;
+    top: 0px;
+    background-image: url('./assets/kmr-bg.jpg');
     background-size: cover;
     height: var(--view-height);
     width: 30%;
     display: flex;
     justify-content: center;
-    position: relative;
+    overflow: hidden;
 }
 
 .logo > img {
     height: 15vh;
+    min-height: 5vw;
     opacity: 0.8;
     margin: 10px auto;
     margin-right: 5px;
@@ -46,7 +53,7 @@ html, body, .main-container {
 }
 
 .logo > p {
-    font-size: min(1000%, 8vw);
+    font-size: min(800%, 4vw);
     margin: 10px auto;
     margin-left: 5px;
     padding: 0;
@@ -54,7 +61,7 @@ html, body, .main-container {
 
 .logo {
     display: flex;
-    font-family: 'odin';
+    font-family: 'quintessential';
     padding: 50px;
     position: absolute;
     justify-content: center;
