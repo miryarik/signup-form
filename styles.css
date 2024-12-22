@@ -81,6 +81,15 @@ html, body, .main-container {
     overflow: hidden;
 }
 
+.side-image > span {
+    font-style: oblique;
+    color: var(--red);
+    font-family: var(--fonts);
+    position: absolute;
+    opacity: 0.6;
+    bottom: 1px;
+}
+
 .form-container {
     color: var(--text-white);
     width: 100%;
