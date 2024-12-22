@@ -31,19 +31,21 @@ html, body, .main-container {
     background-size: cover;
     height: var(--view-height);
     width: 30%;
-    min-width: 30%;
+    /* min-width: 30%; */
     display: flex;
     justify-content: center;
     position: relative;
 }
 
 .logo > img {
-    height: 10em;
+    width: min(50%, 6vw);
     opacity: 0.8;
 }
 
 .logo > h1 {
-    font-size: 100px;
+    font-size: min(1000%, 8vw);
+    margin: 0;
+    padding: 0;
 }
 
 .logo {
@@ -57,6 +59,7 @@ html, body, .main-container {
     height: 12em;
     color: rgba(255, 255, 255, 0.8);
     background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
 }
 
 .form-container {
@@ -87,6 +90,14 @@ html, body, .main-container {
     gap: 30px;
 }
 
+.main-form > .indicate-req {
+    font-family: var(--fonts);
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0 auto 40px 20px;
+}
+
 .main-form-field {
     position: relative;
     margin: 20px;
@@ -98,17 +109,17 @@ html, body, .main-container {
     letter-spacing: 2px;
     font-weight: 550;
     position: absolute;
-    top: -13px;
+    top: -15px;
 }
 
 .main-form-field > input {
     border: 2px solid #E5E7EB;
+    font-size: 16px;
     border-radius: 4px;
     padding: 5px;
     width: 250px;
-    height: 30px;
+    height: 40px;
 }
-
 
 .main-form-field > input:focus {
     border: 2px solid #6c8ac5;
