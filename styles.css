@@ -19,7 +19,7 @@ html {
     --view-height: 100vh;
     --fonts: Verdana, Helvetica, Arial, sans-serif;
     --black: #252525a8;
-    --red: #eb3c3c;
+    --red: #d13636;
 }
 
 html, body, .main-container {
@@ -153,7 +153,8 @@ html, body, .main-container {
     height: 40px;
 }
 
-.main-form-field > input:focus {
+.main-form-field > input:focus,
+.main-form-field > input:hover {
     border: 1px solid var(--text-white);
     box-shadow: 2px 2px 5px var(--shadow-clr);
     outline: none;
@@ -178,15 +179,19 @@ html, body, .main-container {
     font-weight: 800;
     background-color: var(--red);
     font-weight: 900;
-    color: #000000;
+    color: var(--text-white);
 }
 
 .form-foot > input[type='submit']:hover,
 .form-foot > input[type='submit']:focus {
     cursor: pointer;
-    box-shadow: 0 0 10px var(--shadow-clr);
+    box-shadow: 0 0 25px var(--shadow-clr);
     outline: 1px solid var(--text-white);
     outline-offset: 2px;
+}
+
+.form-foot > input[type='submit']:active {
+    outline: none;
 }
 
 .form-foot > p > a {
