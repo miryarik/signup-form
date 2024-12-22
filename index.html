@@ -11,7 +11,7 @@
         <div class="side-image">
             <div class="logo">
                     <img src="./assets/odin-lined.png" alt="odin-logo">
-                    <h1>ODIN</h1>
+                    <p>ODIN</p>
             </div>
         </div>
         
@@ -22,45 +22,52 @@
                 <h1><em>Sign-Up now!</em></h1>
             </div>
 
-            <div class="main-form">
+            <form action="/sample" method="post">
 
-                <p class="indicate-req"><em>Required fields are indicated with *</em></p>
+                <div class="main-form">
 
-                <div class="names">
-                    <div class="main-form-field">
-                        <label for="first-name">FIRST NAME<span aria-required="required">*</span></label>
-                        <input type="text" id="first-name" name="first-name" required>
+                    <p class="indicate-req"><em>Required fields are indicated with *</em></p>
+
+                    <div class="names">
+                        <div class="main-form-field">
+                            <label for="first-name">FIRST NAME<span aria-required="required">*</span></label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="main-form-field">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name">
+                        </div>
                     </div>
-                    <div class="main-form-field">
-                        <label for="last-name">LAST NAME</label>
-                        <input type="text" id="last-name" name="last-name">
+
+                    <div class="contact">
+                        <div class="main-form-field">
+                            <label for="email">EMAIL<span aria-required="required">*</span></label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="main-form-field">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
+                    </div>
+
+                    <div class="passwords">
+                        <div class="main-form-field">
+                            <label for="pwd">PASSWORD<span aria-required="required">*</span></label>
+                            <input type="password" id="pwd" name="pwd" required>
+                        </div>
+                        <div class="main-form-field">
+                            <label for="confirm-pwd">CONFIRM PASSWORD<span aria-required="required">*</span></label>
+                            <input type="password" name="confirm-pwd" id="confirm-pwd" required>
+                        </div>
                     </div>
                 </div>
 
-                <div class="contact">
-                    <div class="main-form-field">
-                        <label for="email">EMAIL<span aria-required="required">*</span></label>
-                        <input type="email" name="email" id="email" required>
-                    </div>
-                    <div class="main-form-field">
-                        <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="phone" id="phone">
-                    </div>
+                <div class="form-foot">
+                    <input type="submit" value="Create Account">
+                    <p>Already have an account? <a href="./login">Login in</a></p>
                 </div>
 
-                <div class="passwords">
-                    <div class="main-form-field">
-                        <label for="pwd">PASSWORD<span aria-required="required">*</span></label>
-                        <input type="password" id="pwd" name="pwd" required>
-                    </div>
-                    <div class="main-form-field">
-                        <label for="confirm-pwd">CONFIRM PASSWORD<span aria-required="required">*</span></label>
-                        <input type="password" name="confirm-pwd" id="confirm-pwd" required>
-                    </div>
-                </div>
-            </div>
-
-            <div class="form-foot"></div>
+            </form>
         </div>
     </div>
 </body>

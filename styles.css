@@ -10,8 +10,9 @@
 html {
     --bg-color: #fcfcfc;
     --shadow-clr: rgba(82, 82, 82, 0.7);
-    --view-height: 120vh;
+    --view-height: 100vh;
     --fonts: Verdana, Helvetica, Arial, sans-serif;
+    --green: #596D48;
 }
 
 html, body, .main-container {
@@ -31,32 +32,36 @@ html, body, .main-container {
     background-size: cover;
     height: var(--view-height);
     width: 30%;
-    /* min-width: 30%; */
     display: flex;
     justify-content: center;
     position: relative;
 }
 
 .logo > img {
-    width: min(50%, 6vw);
+    height: 15vh;
     opacity: 0.8;
+    margin: 10px auto;
+    margin-right: 5px;
+    padding: 0;
 }
 
-.logo > h1 {
+.logo > p {
     font-size: min(1000%, 8vw);
-    margin: 0;
+    margin: 10px auto;
+    margin-left: 5px;
     padding: 0;
 }
 
 .logo {
     display: flex;
     font-family: 'odin';
+    padding: 50px;
     position: absolute;
     justify-content: center;
     align-items: center;
     top: 20%;
     width: 100%;
-    height: 12em;
+    height: 20vh;
     color: rgba(255, 255, 255, 0.8);
     background-color: rgba(0, 0, 0, 0.5);
     overflow: hidden;
@@ -87,7 +92,8 @@ html, body, .main-container {
 
 .main-form > div {
     display: flex;
-    gap: 30px;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .main-form > .indicate-req {
@@ -132,3 +138,37 @@ html, body, .main-container {
     outline: none;
 }
 
+.form-foot {
+    padding: 40px 50px;
+    font-family: var(--fonts);
+}
+
+.form-foot > input[type='submit'] {
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 0;
+    font-size: 1em;
+    font-weight: 800;
+    color: white;
+    background-color: var(--green);
+}
+
+.form-foot > input[type='submit']:hover,
+.form-foot > input[type='submit']:focus {
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--green);
+    outline-offset: 2px;
+    outline-color: var(--green);
+}
+
+.form-foot > p > a {
+    font-weight: 900;
+    color: var(--green);
+    text-decoration: none;
+}
+
+.form-foot > p > a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
