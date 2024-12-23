@@ -84,7 +84,7 @@ html, body, .main-container {
 .side-image > span {
     font-style: oblique;
     color: var(--red);
-    flex-shrink: calc(0.1 * var(--view-height));
+    font-size: min(0.8vw, 16px);
     font-family: var(--fonts);
     position: absolute;
     opacity: 0.6;
@@ -203,4 +203,38 @@ html, body, .main-container {
 .form-foot > p > a:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main-container {
+        flex-wrap: wrap;
+    }
+
+    .side-image {
+        position: static;
+        width: 100vw;
+        height: 20%
+    }
+
+    .side-image > span {
+        visibility: hidden;
+    } 
+
+    .logo {
+        position: sticky;
+    }
+
+    .logo > p {
+        font-size: 3em;
+    }
+
+    .logo > img {
+        height: 12vw;
+        width: 12vw;
+    }
+
+    .form-container .info-text {
+        margin-top: 10px;
+    }
 }
